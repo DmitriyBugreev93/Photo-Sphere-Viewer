@@ -486,11 +486,17 @@ body {
 
 .popup-img-sec {
   opacity: 0;
+  .psv-hud{
+    cursor: default !important;
+  }
   &.hide{
     opacity: 0;
   }
   &.active {
     opacity: 1;
+    .psv-hud{
+      cursor: move !important;
+    }
   }
 
   .popup-img-wrap {
