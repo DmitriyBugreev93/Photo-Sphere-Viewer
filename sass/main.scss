@@ -8,7 +8,7 @@
   src: url('../fonts/ofont.ru_TimesNewRoman.ttf');
 }
 
-a{
+a {
   text-decoration: none;
 }
 
@@ -489,15 +489,19 @@ body {
 
 .popup-img-sec {
   opacity: 0;
-  .psv-hud{
+
+  .psv-hud {
     cursor: default !important;
   }
-  &.hide{
+
+  &.hide {
     opacity: 0;
   }
+
   &.active {
     opacity: 1;
-    .psv-hud{
+
+    .psv-hud {
       cursor: move !important;
     }
   }
