@@ -1,3 +1,25 @@
+$(function(){
+
+  let filter = $('[data-filter]');
+
+  filter.on('click', function(e){
+    e.preventDefault();
+
+    let cat = $(this).data('filter');
+    $('[data-cat]').each(function(){
+      let workCat = $(this).data('cat');
+     if(workCat = cat) {
+      $(this).addClass('active');
+      $('body').addClass('lock');
+     }
+    });
+  });
+
+  $('.popup-img-close').on('click', function(){
+    $('.popup-img-sec').removeClass('active');
+  })
+
+});
 
 document.addEventListener("DOMContentLoaded", function () {
 
@@ -15,28 +37,54 @@ document.addEventListener("DOMContentLoaded", function () {
     document.querySelector('body').classList.remove('lock');
   });
 
-  let m1Btn = document.getElementById('m1');
-  let popupImg = document.querySelector('.popup-img-sec');
-  let closeBtnImg = document.querySelector('.popup-img-close');
-
-  m1Btn.addEventListener('click', function (e) {
-    e.preventDefault();
-    popupImg.classList.add('active');
-    document.querySelector('body').classList.add('lock');
-  });
-  closeBtnImg.addEventListener('click', function () {
-    popupImg.classList.remove('active');
-    document.querySelector('body').classList.remove('lock');
-  });
 
 
   /* ======================================================== */
 
 
   var PSV = new PhotoSphereViewer({
-    panorama: 'https://dmitriybugreev93.github.io/Photo-Sphere-Viewer/img/3.png',
+    panorama: 'https://dmitriybugreev93.github.io/Photo-Sphere-Viewer/img/1.png',
     container: 'photosphere',
+    loading_img: 'https://dmitriybugreev93.github.io/Photo-Sphere-Viewer/img/1.png',
+    navbar: 'autorotate zoom download fullscreen',
+    caption: 'Foto da sala',
+    default_fov: 100,
+    mousewheel: false,
+    size: {
+      height: 550
+    }
+  });
+
+  var PSV2 = new PhotoSphereViewer({
+    panorama: 'https://dmitriybugreev93.github.io/Photo-Sphere-Viewer/img/2.png',
+    container: 'photosphere2',
+    loading_img: 'https://dmitriybugreev93.github.io/Photo-Sphere-Viewer/img/2.png',
+    navbar: 'autorotate zoom download fullscreen',
+    caption: 'Foto da sala',
+    default_fov: 100,
+    mousewheel: false,
+    size: {
+      height: 550
+    }
+  });
+
+  var PSV3 = new PhotoSphereViewer({
+    panorama: 'https://dmitriybugreev93.github.io/Photo-Sphere-Viewer/img/3.png',
+    container: 'photosphere3',
     loading_img: 'https://dmitriybugreev93.github.io/Photo-Sphere-Viewer/img/3.png',
+    navbar: 'autorotate zoom download fullscreen',
+    caption: 'Foto da sala',
+    default_fov: 100,
+    mousewheel: false,
+    size: {
+      height: 550
+    }
+  });
+
+  var PSV4 = new PhotoSphereViewer({
+    panorama: 'https://dmitriybugreev93.github.io/Photo-Sphere-Viewer/img/4.png',
+    container: 'photosphere4',
+    loading_img: 'https://dmitriybugreev93.github.io/Photo-Sphere-Viewer/img/4.png',
     navbar: 'autorotate zoom download fullscreen',
     caption: 'Foto da sala',
     default_fov: 100,

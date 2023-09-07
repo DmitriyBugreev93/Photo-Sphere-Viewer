@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="format-detection" content="telephone=no">
   <title>Home Page</title>
-  <link rel="stylesheet" href="https://cdn.rawgit.com/mistic100/Photo-Sphere-Viewer/3.1.0/dist/photo-sphere-viewer.min.css">
+  <link rel="stylesheet"
+    href="https://cdn.rawgit.com/mistic100/Photo-Sphere-Viewer/3.1.0/dist/photo-sphere-viewer.min.css">
   <link rel="stylesheet" href="css/main.min.css">
 </head>
 
@@ -46,22 +47,22 @@
         <div class="container">
           <div class="ban">
 
-            <a id="m1" class="m1 btn-ban" href="#">
+            <a id="m1" class="m1 btn-ban" href="#" data-filter="1">
               <span>M1</span>
               Apartments
             </a>
 
-            <a class="m2 btn-ban" href="#">
+            <a class="m2 btn-ban" href="#" data-filter="2"> 
               <span>M2</span>
               Mansions
             </a>
 
-            <a class="p1 btn-ban" href="#">
+            <a class="p1 btn-ban" href="#" data-filter="3">
               <span>P1</span>
               Park
             </a>
 
-            <a class="r2 btn-ban" href="#">
+            <a class="r2 btn-ban" href="#" data-filter="4">
               <span>R2</span>
               Road
             </a>
@@ -179,7 +180,7 @@
       </div>
     </div>
 
-    <div class="popup-img-sec">
+    <div class="popup-img-sec" data-cat="1">
       <div class="popup-img-wrap">
         <div class="popup-img">
           <div class="box">
@@ -190,7 +191,7 @@
       </div>
     </div>
 
-    <div class="popup-img-sec">
+    <div class="popup-img-sec" data-cat="2">
       <div class="popup-img-wrap">
         <div class="popup-img">
           <div class="box">
@@ -201,7 +202,7 @@
       </div>
     </div>
 
-    <div class="popup-img-sec">
+    <div class="popup-img-sec" data-cat="3">
       <div class="popup-img-wrap">
         <div class="popup-img">
           <div class="box">
@@ -212,7 +213,7 @@
       </div>
     </div>
 
-    <div class="popup-img-sec">
+    <div class="popup-img-sec" data-cat="4">
       <div class="popup-img-wrap">
         <div class="popup-img">
           <div class="box">
@@ -223,10 +224,10 @@
       </div>
     </div>
 
-   
+
   </main>
 
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/threejs/r70/three.min.js"></script>
   <script src="https://cdn.rawgit.com/mistic100/Photo-Sphere-Viewer/3.1.0/dist/photo-sphere-viewer.min.js"></script>
 
