@@ -8,7 +8,9 @@ $(function(){
     let cat = $(this).data('filter');
     $('[data-cat]').each(function(){
       let workCat = $(this).data('cat');
-     if(workCat = cat) {
+     if(workCat != cat) {
+      $(this).addClass('hide');
+     } else {
       $(this).addClass('active');
       $('body').addClass('lock');
      }
@@ -17,6 +19,7 @@ $(function(){
 
   $('.popup-img-close').on('click', function(){
     $('.popup-img-sec').removeClass('active');
+    $('body').removeClass('lock');
   })
 
 });

@@ -486,7 +486,9 @@ body {
 
 .popup-img-sec {
   opacity: 0;
-
+  &.hide{
+    opacity: 0;
+  }
   &.active {
     opacity: 1;
   }
