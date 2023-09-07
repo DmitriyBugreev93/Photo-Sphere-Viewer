@@ -507,24 +507,23 @@ body {
   .box{
     position: relative;
     width: 100%;
+    padding-left: 95px;
+    padding-right: 95px;
     .popup-img-close{
       max-width: 22px;
       width: 100%;
       position: absolute;
       top: -42px;
-      right: 0;
+      right: 95px;
       cursor: pointer;
     }
   }
   .popup-img {
     width: 100%;
-    img {
-      width: 100%;
-      max-height: 642px;
-    }
+
     #photosphere {
       width: 100%;
-      max-height: 642px;
+      height: 100%;
     }
   }
 }

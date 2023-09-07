@@ -17,8 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   let m1Btn = document.getElementById('m1');
   let popupImg = document.querySelector('.popup-img-sec');
-  let closeBtnImg = document.getElementById('popup-img-close');
-
+  let closeBtnImg = document.querySelector('.popup-img-close');
 
   m1Btn.addEventListener('click', function (e) {
     e.preventDefault();
@@ -35,15 +34,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
   var PSV = new PhotoSphereViewer({
-    panorama: 'https://github.com/DmitriyBugreev93/Photo-Sphere-Viewer/blob/main/3.png?raw=true',
+    panorama: 'https://dmitriybugreev93.github.io/Photo-Sphere-Viewer/img/3.png',
     container: 'photosphere',
-    loading_img: 'https://github.com/DmitriyBugreev93/Photo-Sphere-Viewer/blob/main/3.png?raw=true',
+    loading_img: 'https://dmitriybugreev93.github.io/Photo-Sphere-Viewer/img/3.png',
     navbar: 'autorotate zoom download fullscreen',
     caption: 'Foto da sala',
     default_fov: 100,
     mousewheel: false,
     size: {
-      height: 500
+      height: 550
     }
   });
 
