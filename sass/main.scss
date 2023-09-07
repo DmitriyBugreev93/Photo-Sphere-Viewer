@@ -22,7 +22,8 @@ li {
 body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-  &.lock{
+
+  &.lock {
     overflow: hidden;
   }
 }
@@ -308,6 +309,7 @@ body {
     justify-content: center;
     align-items: center;
     transition: all .3s ease;
+
     &.active {
       top: 0;
     }
@@ -484,9 +486,11 @@ body {
 
 .popup-img-sec {
   opacity: 0;
+
   &.active {
     opacity: 1;
   }
+
   .popup-img-wrap {
     backdrop-filter: blur(5px);
     position: absolute;
@@ -501,16 +505,19 @@ body {
     transition: all .3s ease;
     padding-top: 90px;
     padding-bottom: 70px;
+
     &.active {
       top: 0;
     }
   }
-  .box{
+
+  .box {
     position: relative;
     width: 100%;
     padding-left: 95px;
     padding-right: 95px;
-    .popup-img-close{
+
+    .popup-img-close {
       max-width: 22px;
       width: 100%;
       position: absolute;
@@ -519,6 +526,7 @@ body {
       cursor: pointer;
     }
   }
+
   .popup-img {
     width: 100%;
 
@@ -528,4 +536,3 @@ body {
     }
   }
 }
-
